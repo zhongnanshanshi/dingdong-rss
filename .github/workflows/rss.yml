@@ -1,0 +1,58 @@
+
+name: Update podcast RSS
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 13 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: podcast-feed
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Generate podcast RSS
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python build.py
+
+      - name: Commit RSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/feed.xml
+          git diff --cached --quiet || (git commit -m "Update podcast RSS" && git push)
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy GitHub Pages
+        uses: actions/deploy-pages@v4
