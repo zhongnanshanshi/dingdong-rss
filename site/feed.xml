@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>以案说法｜叮咚FM（非官方订阅）</title>
+    <link>https://www.dingdongfm.cn/web/wx/columnIndex?columnId=6b853bfb-28cb-5f56-1676-8993ddd9af85</link>
+    <description>《以案说法》非官方个人使用的音频订阅源，节目版权归原权利人所有。</description>
+    <language>zh-cn</language>
+    <item>
+      <title>以案说法 2026-10-13</title>
+      <description>《以案说法》2026年10月13日节目。</description>
+      <guid isPermaLink="false">episode-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 19:00:00 +0800</pubDate>
+      <enclosure url="https://github.com/zhongnanshanshi/dingdong-rss/releases/download/episode-2026-10-13/audio.mp3" type="audio/mpeg" length="32400604" />
+    </item>
+    <item>
+      <title>以案说法 2026-10-12</title>
+      <description>《以案说法》2026年10月12日节目。</description>
+      <guid isPermaLink="false">episode-2026-10-12</guid>
+      <pubDate>Mon, 12 Oct 2026 19:00:00 +0800</pubDate>
+      <enclosure url="https://github.com/zhongnanshanshi/dingdong-rss/releases/download/episode-2026-10-12/audio.mp3" type="audio/mpeg" length="32400604" />
+    </item>
+    <item>
+      <title>以案说法 2026-10-11</title>
+      <description>《以案说法》2026年10月11日节目。</description>
+      <guid isPermaLink="false">episode-2026-10-11</guid>
+      <pubDate>Sun, 11 Oct 2026 19:00:00 +0800</pubDate>
+      <enclosure url="https://github.com/zhongnanshanshi/dingdong-rss/releases/download/episode-2026-10-11/audio.mp3" type="audio/mpeg" length="32400918" />
+    </item>
+  </channel>
+</rss>
