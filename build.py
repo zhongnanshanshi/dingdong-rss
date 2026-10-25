@@ -52,7 +52,6 @@ def build():
     today = dt.datetime.now(CN).date()
     # Initial historical discovery is deliberately limited. Do not assume all dates exist.
     dates = [today - dt.timedelta(days=i) for i in range(15)]
-    dates.reverse()
     existing = {}
     if FEED.exists():
         try:
