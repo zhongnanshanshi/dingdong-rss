@@ -6,6 +6,13 @@
     <description>《以案说法》非官方个人使用的音频订阅源，节目版权归原权利人所有。</description>
     <language>zh-cn</language>
     <item>
+      <title>以案说法 2026-10-28</title>
+      <description>《以案说法》2026年10月28日节目。</description>
+      <guid isPermaLink="false">episode-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 19:00:00 +0800</pubDate>
+      <enclosure url="https://github.com/zhongnanshanshi/dingdong-rss/releases/download/episode-2026-10-28/audio.mp3" type="audio/mpeg" length="32400918" />
+    </item>
+    <item>
       <title>以案说法 2026-10-27</title>
       <description>《以案说法》2026年10月27日节目。</description>
       <guid isPermaLink="false">episode-2026-10-27</guid>
